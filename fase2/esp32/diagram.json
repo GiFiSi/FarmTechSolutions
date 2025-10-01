@@ -32,7 +32,13 @@
       "left": -47.2,
       "attrs": {}
     },
-    { "type": "wokwi-dht22", "id": "dht1", "top": -57.3, "left": 369, "attrs": {} },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -57.3,
+      "left": 369,
+      "attrs": { "humidity": "66.5", "temperature": "-13.6" }
+    },
     { "type": "wokwi-relay-module", "id": "relay1", "top": 249.8, "left": 268.8, "attrs": {} },
     {
       "type": "wokwi-led",
@@ -53,7 +59,6 @@
     [ "esp:5V", "relay1:VCC", "red", [ "v28.8", "h264.19" ] ],
     [ "esp:5V", "ldr1:VCC", "red", [ "v28.8", "h120.19" ] ],
     [ "esp:2", "relay1:IN", "green", [ "h139.24", "v125" ] ],
-    [ "esp:34", "ldr1:DO", "green", [ "h-14.21", "v172.8", "h163.2", "v48.6" ] ],
     [ "esp:GND.3", "dht1:GND", "black", [ "h0" ] ],
     [ "esp:5V", "dht1:VCC", "red", [ "v28.8", "h379.39" ] ],
     [ "esp:15", "dht1:SDA", "green", [ "h292.84", "v0", "h-0.1" ] ],
@@ -61,7 +66,8 @@
     [ "esp:GND.2", "btn2:1.r", "black", [ "v-105.6", "h196.84", "v76.8" ] ],
     [ "esp:GND.2", "btn3:1.r", "black", [ "v-96", "h187.24", "v115.2" ] ],
     [ "relay1:NC", "led1:A", "green", [ "v-1.2", "h78" ] ],
-    [ "led1:C", "esp:GND.3", "black", [ "v19.2", "h-38", "v-163.2" ] ]
+    [ "led1:C", "esp:GND.3", "black", [ "v19.2", "h-38", "v-163.2" ] ],
+    [ "esp:34", "ldr1:AO", "green", [ "h0" ] ]
   ],
   "dependencies": {}
 }
