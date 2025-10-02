@@ -102,4 +102,5 @@ int ldrValue = analogRead(LDR_PIN);
 float ph = map(ldrValue, 0, 4095, 0, 14);
 ```
 ## 6. Video YT
-Link: 
+Link: https://youtu.be/gm041xCn9kE
+
